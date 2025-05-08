@@ -26,7 +26,7 @@ run *forward_modelling.py* to get the "observation data" firstly.
 run *RMFWI.py* for an ensemble of velocity realisations.
 
 > [!NOTE]
-> The estimation of geostatistics characterisations in the inversion processing needs to be consistent with the input velocity field in the forward modelling.
+> The estimation of geostatistics characterisations in the inversion processing needs to be consistent with the input velocity data in the forward modelling.
 
 
 
