@@ -1,6 +1,6 @@
 This package is developed based on the paper [https://doi.org/10.1016/j.cageo.2022.105041], which further includes the well log information as the direct observation for the inversion.
 
-The inversion work is implemented by the geostatistical algorithm-**Random Mixing**-which requires two geostatistical characterizations, marginal distribution and spatial variogram, as primary information for the whole inversion processing.
+The inversion work is implemented by the geostatistical algorithm-**Random Mixing**-which requires two geostatistical characterizations, [marginal distribution](https://en.wikipedia.org/wiki/Marginal_distribution) and [spatial variogram](https://en.wikipedia.org/wiki/Variogram) , as primary information for the whole inversion processing.
 
 Assume the limited velocity information is known via the well log in the targeted area.
 
