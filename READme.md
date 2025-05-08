@@ -17,7 +17,7 @@ git clone https://github.com/AoChang56/FWIRM.git
 cd FWIRM
 
 > [!IMPORTANT]
-> Make sure all the required libraries have been installed as noted in the extra.txt before running.
+> Make sure all the required libraries have been installed as noted in the extra.txt before running. The parallel computing in the frequency domain needs to be run in the HPC.
 
 # Implementation
 
