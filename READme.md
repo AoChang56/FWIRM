@@ -24,7 +24,7 @@ cd FWIRM
 
 run *forward_modelling.py* to get the "observation data" firstly. 
 
-run *RMFWI.py* for an ensemble of velocity realisations.
+run *RMFWI.py* to get an ensemble of inverted velocity realisations.
 
 > [!NOTE]
 > The estimation of geostatistics characterisations in the inversion processing needs to be consistent with the input velocity data in the forward modelling.
