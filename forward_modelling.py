@@ -209,7 +209,7 @@ if __name__ == '__main__':
 	
 	# print(responses)
 	
-	np.save("data_random",{"gridx": nex,
+	np.save("data_obs",{"gridx": nex,
 			"gridz": nez,
 			"width": Width,
 			"depth": Depth,
