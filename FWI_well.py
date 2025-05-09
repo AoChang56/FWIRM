@@ -18,7 +18,7 @@ import scipy.interpolate as interpolate
 fpth = os.path.abspath(os.path.join('rmwspy'))
 sys.path.append(fpth)
 from random_mixing_whittaker_shannon import *
-from basics_fwi import *
+from forward_modelling import *
 from numpy import linalg as LA
 
 
@@ -199,7 +199,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Ao\' cool RM FWI code')
     parser.add_argument('--nFields', '-n', metavar='nFields', dest='nFields', type=int, default=100, help='number of fields to simulate.')
     parser.add_argument('--start', '-s', metavar='START', dest='start', type=int, default=0, help='id number of first field.')
-    parser.add_argument('--data', '-s', metavar='DATAFILE', dest='datafile', type=str, default='data.npy', help='data file (in, npy).')
+    parser.add_argument('--data', '-s', metavar='DATAFILE', dest='datafile', type=str, default='data_obs.npy', help='data file (in, npy).')
     parser.add_argument('--const', '-c', metavar='CONSTFILE', dest='constrainsfile', type=str, default='newfield.npy', help='file of constraints (in, npy).')
     parser.add_argument('--real', '-r', metavar='REALFILE', dest='realizationfile', type=str, default='all_sim_data', help='file of realizations (out, npy).')
     parser.add_argument('--velo', '-r', metavar='VELOFILE', dest='velocityfile', type=str, default='field_velocity', help='file of velocities (out, npy).')
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     numWSNodes=8 # number of Whittaker-Shannon interpolation nodes (normally 8)
 
     # read survey:
-    #survey=np.load("data(0930).npy")
+    #survey=np.load("data_obs.npy")
 
     survey=np.load(args.datafile)
     Nx=survey.item().get('gridx')
