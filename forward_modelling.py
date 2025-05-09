@@ -237,7 +237,7 @@ if __name__ == '__main__':
 	clb.locator = tick_locator
 	clb.update_ticks()
 	clb.set_label("v (m/s)", fontsize=16)
-	plt.savefig("v(random field).png", bbox_inches='tight', pad_inches=0)
+	plt.savefig("v_random.png", bbox_inches='tight', pad_inches=0)
 	plt.clf()
 	plt.close()
 
