@@ -124,7 +124,7 @@ if __name__ == '__main__':
 	Frequencies = np.arange(5.,15.,1.) # Hz
 	# print("frequencies", Frequencies)
 
-	VelocityFile='randomfield.npy'
+	VelocityFile='v_field.npy'
 	# VelocityFile=None
 	if VelocityFile:
 		vel = np.load(VelocityFile)
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 		velocity_data=getMarmousi()	
 	print("Found velocity data over grid %s"%(velocity_data.shape,))
 
-	##set up field with sinus wave 
+	##set up field with sinus wave (checkerboard" 
 	# y=np.linspace(0, 2000, 200)
 	# x=np.linspace(0, 500, 50)
 	# xx,yy=np.meshgrid(x,y)
